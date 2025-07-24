@@ -12,6 +12,8 @@ const NewsPage = ({ isDarkMode, onToggleDarkMode }) => {
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate(); // Initialize navigate
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     // Check if the token is expired on component mount
     if (isTokenExpired()) {
@@ -19,7 +21,7 @@ const NewsPage = ({ isDarkMode, onToggleDarkMode }) => {
       return; // Stop further execution if token is expired
     }
 
-    axios.get('http://localhost:5000/api/news')
+    axios.get(`${apiUrl}/news`)
       .then(res => {
         setNewsBySource(res.data);
         setIsLoading(false);

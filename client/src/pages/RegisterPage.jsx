@@ -9,12 +9,13 @@ const RegisterPage = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const [showToast, setShowToast] = useState(false);
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   const handleSubmit = async e => {
     e.preventDefault();
     setError('');
     try {
-      await axios.post('http://localhost:5000/api/auth/register', form);
+      await axios.post(`${apiUrl}/auth/register`, form);
       setShowToast(true);
       setTimeout(() => {
         setShowToast(false);

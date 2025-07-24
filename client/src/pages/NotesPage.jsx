@@ -18,6 +18,8 @@ const NotesPage = ({ isDarkMode, onToggleDarkMode }) => {
   const [search, setSearch] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   const fetchNotes = async () => {
     setIsLoading(true);
     try {
@@ -25,7 +27,7 @@ const NotesPage = ({ isDarkMode, onToggleDarkMode }) => {
         navigate('/login');
         return;
       }
-      const res = await axios.get('http://localhost:5000/api/notes', {
+      const res = await axios.get(`${apiUrl}/notes`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setNotes(res.data);
@@ -41,7 +43,7 @@ const NotesPage = ({ isDarkMode, onToggleDarkMode }) => {
   const handleAddNote = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/notes', form, {
+      await axios.post(`${apiUrl}/notes`, form, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setToastMessage('Note added successfully!');
@@ -58,7 +60,7 @@ const NotesPage = ({ isDarkMode, onToggleDarkMode }) => {
 
   const handleDelete = async id => {
     try {
-      await axios.delete(`http://localhost:5000/api/notes/${id}`, {
+      await axios.delete(`${apiUrl}/notes/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setToastMessage('Note deleted successfully!');
@@ -83,7 +85,7 @@ const NotesPage = ({ isDarkMode, onToggleDarkMode }) => {
 
   const handleEditSave = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/notes/${editNote._id}`, {
+      await axios.put(`${apiUrl}/notes/${editNote._id}`, {
         title: editNote.title,
         content: editNote.content
       }, {

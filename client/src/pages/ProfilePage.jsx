@@ -15,11 +15,13 @@ const ProfilePage = ({ isDarkMode, onToggleDarkMode }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const fetchProfile = async () => {
       setIsLoading(true);
       try {
-        const res = await axios.get('http://localhost:5000/api/auth/profile', {
+        const res = await axios.get(`${apiUrl}/auth/profile`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setUser(res.data);
@@ -37,7 +39,7 @@ const ProfilePage = ({ isDarkMode, onToggleDarkMode }) => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put('http://localhost:5000/api/auth/profile', { name, email }, {
+      const res = await axios.put(`${apiUrl}/auth/profile`, { name, email }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setUser(res.data);

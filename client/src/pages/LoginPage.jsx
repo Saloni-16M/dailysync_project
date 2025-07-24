@@ -14,6 +14,8 @@ const LoginPage = () => {
   const [toastMessage, setToastMessage] = useState('');
   const [toastVariant, setToastVariant] = useState('');
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   // Check if token already exists and redirect to the news page
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -27,7 +29,7 @@ const LoginPage = () => {
     setIsLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
+      const res = await axios.post(`${apiUrl}/auth/login`, form);
       localStorage.setItem('token', res.data.token);
       setToastMessage('Login successful! Redirecting...');
       setToastVariant('success');

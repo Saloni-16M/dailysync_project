@@ -9,9 +9,6 @@ router.post('/login', login);
 router.get('/profile', verifyToken, getProfile);
 router.put('/profile', verifyToken, updateProfile);
 
-app.use(cors({
-  origin: 'https://dailysync-project-edje.vercel.app',
-  credentials: true
-}));
+
 
 module.exports = router;

@@ -1,0 +1,339 @@
+/* NewsPage.css */
+
+/* Card Styling */
+.news-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .news-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .news-card .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-teal {
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-teal:hover {
+    background-color: #006666;
+  }
+  
+  .btn-outline-teal {
+    border-color: #008080;
+    color: #008080;
+  }
+  
+  .btn-outline-teal:hover {
+    background-color: #008080;
+    color: #ffffff;
+  }
+  
+  /* Adjusting for responsiveness */
+  @media (max-width: 767px) {
+    .news-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Center align and style the title */
+  .text-teal {
+    color: #008080;
+  }
+
+/* Enhanced Notes card styles */
+.card.notes-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10) !important;
+  border: 1px solid #e0e0e0 !important;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  margin-bottom: 1.5rem !important;
+}
+.card.notes-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18) !important;
+  border-color: #008080 !important;
+}
+.card.notes-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008080;
+}
+.card.notes-card .card-text {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.card.notes-card .btn {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Dark mode for notes cards */
+.dark-mode .card.notes-card {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #333 !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.30) !important;
+}
+.dark-mode .card.notes-card:hover {
+  border-color: #4fd1c5 !important;
+}
+.dark-mode .card.notes-card .card-title {
+  color: #4fd1c5 !important;
+}
+.dark-mode .card.notes-card .card-text {
+  color: #e0e0e0 !important;
+}
+.dark-mode .card.notes-card .btn,
+.dark-mode .card.notes-card .form-label {
+  color: #f8f9fa !important;
+}
+.dark-mode .card.notes-card .card-title.text-teal {
+  color: #4fd1c5 !important;
+}
+  
+/* Further enhanced dark mode for notes cards */
+.dark-mode .card.notes-card {
+  background: linear-gradient(135deg, #23272b 70%, #222c2e 100%) !important;
+  color: #f8f9fa !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.35) !important;
+}
+.dark-mode .card.notes-card .card-title {
+  color: #5eead4 !important;
+  letter-spacing: 0.5px;
+}
+.dark-mode .card.notes-card .card-text {
+  color: #e0e0e0 !important;
+}
+.dark-mode .card.notes-card .btn-primary {
+  background-color: #4fd1c5 !important;
+  color: #181a1b !important;
+  border: none !important;
+}
+.dark-mode .card.notes-card .btn-primary:hover {
+  background-color: #2dd4bf !important;
+  color: #181a1b !important;
+}
+.dark-mode .card.notes-card .btn-danger {
+  background-color: #f87171 !important;
+  color: #fff !important;
+  border: none !important;
+}
+.dark-mode .card.notes-card .btn-danger:hover {
+  background-color: #ef4444 !important;
+  color: #fff !important;
+}
+.dark-mode .form-control {
+  background-color: #23272b !important;
+  color: #f8f9fa !important;
+  border: 1px solid #444 !important;
+}
+.dark-mode .form-control:focus {
+  background-color: #23272b !important;
+  color: #fff !important;
+  border-color: #4fd1c5 !important;
+  box-shadow: 0 0 0 2px #4fd1c533 !important;
+}
+  
+/* Force all text inside notes cards to be bright in dark mode */
+.dark-mode .card.notes-card,
+.dark-mode .card.notes-card * {
+  color: #f8f9fa !important;
+}
+.dark-mode .card.notes-card .card-title.text-teal {
+  color: #5eead4 !important;
+}
+.dark-mode .card.notes-card .btn-primary {
+  color: #181a1b !important;
+}
+.dark-mode .card.notes-card .btn-danger {
+  color: #fff !important;
+}
+.dark-mode .form-control,
+.dark-mode .form-control:focus,
+.dark-mode input,
+.dark-mode textarea {
+  color: #f8f9fa !important;
+  background-color: #23272b !important;
+  border-color: #444 !important;
+}
+  
+/* Animated card hover effect */
+.card.notes-card {
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.18s;
+}
+.card.notes-card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18) !important;
+}
+
+/* Category tag styles */
+.note-tag {
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  font-size: 0.85em;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  margin-right: 0.5em;
+  background: linear-gradient(90deg, #4fd1c5 60%, #008080 100%);
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.note-tag.work { background: linear-gradient(90deg, #6366f1 60%, #4fd1c5 100%); }
+.note-tag.idea { background: linear-gradient(90deg, #fbbf24 60%, #f87171 100%); }
+.note-tag.personal { background: linear-gradient(90deg, #34d399 60%, #4fd1c5 100%); }
+
+/* Floating Add Note Button */
+.fab-add-note {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  background: linear-gradient(90deg, #008080 60%, #4fd1c5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.fab-add-note:hover {
+  background: linear-gradient(90deg, #006666 60%, #2dd4bf 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  transform: scale(1.08);
+}
+
+/* Fun empty state illustration */
+.notes-empty-illustration {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+/* Dark mode for new elements */
+.dark-mode .fab-add-note {
+  background: linear-gradient(90deg, #006666 60%, #2dd4bf 100%) !important;
+  color: #fff !important;
+}
+.dark-mode .note-tag {
+  color: #181a1b !important;
+  opacity: 0.95;
+}
+  
+/* Add Note Card styles */
+.add-note-card {
+  border-radius: 18px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10) !important;
+  border: 1px solid #e0e0e0 !important;
+  margin-bottom: 2rem !important;
+  background: #fff;
+}
+.add-note-card .fw-bold {
+  color: #008080 !important;
+}
+.add-note-card .form-control {
+  font-size: 1.05rem;
+  padding: 0.75rem 1rem;
+}
+.add-note-card .btn-teal {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.add-note-card .text-teal {
+  color: #008080 !important;
+}
+
+.dark-mode .add-note-card {
+  background: #23272b !important;
+  color: #f8f9fa !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.22) !important;
+}
+.dark-mode .add-note-card .fw-bold {
+  color: #4fd1c5 !important;
+}
+.dark-mode .add-note-card .form-control {
+  background: #23272b !important;
+  color: #f8f9fa !important;
+  border: 1px solid #444 !important;
+}
+.dark-mode .add-note-card .form-control:focus {
+  border-color: #4fd1c5 !important;
+  box-shadow: 0 0 0 2px #4fd1c533 !important;
+}
+.dark-mode .add-note-card .btn-teal {
+  background: linear-gradient(90deg, #006666 60%, #2dd4bf 100%) !important;
+  color: #fff !important;
+}
+  
+/* Search Bar Card styles */
+.search-bar-card {
+  border-radius: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+  border: 1px solid #e0e0e0 !important;
+  background: #fff;
+  margin-bottom: 1.5rem !important;
+}
+.search-bar-card .input-group-text {
+  background: transparent !important;
+  border: none !important;
+  color: #008080 !important;
+}
+.search-bar-card .form-control {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 17px !important;
+}
+.search-bar-card .form-control:focus {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dark-mode .search-bar-card {
+  background: #23272b !important;
+  color: #f8f9fa !important;
+  border: 1px solid #444 !important;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18) !important;
+}
+.dark-mode .search-bar-card .input-group-text {
+  color: #4fd1c5 !important;
+}
+.dark-mode .search-bar-card .form-control {
+  color: #f8f9fa !important;
+}
+.dark-mode .search-bar-card .form-control,
+.dark-mode .add-note-card .form-control {
+  color: #f8f9fa !important;
+  background: none !important;
+}
+.dark-mode .search-bar-card .form-control::placeholder,
+.dark-mode .add-note-card .form-control::placeholder {
+  color: #b0b0b0 !important;
+  opacity: 1 !important;
+}
+  

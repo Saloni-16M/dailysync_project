@@ -1,0 +1,44 @@
+/* Teal Button */
+.btn-teal {
+    background-color: #008080;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-teal:hover {
+    background-color: #006666;
+    color: white;
+  }
+  
+  /* Input Fields Styling */
+  input.form-control {
+    border-radius: 8px;
+    border: 2px solid #008080;
+    padding: 10px;
+  }
+  
+  /* Text Link Color */
+  .text-teal {
+    color: #008080 !important;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    color: #008080;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 576px) {
+    .card {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,260 @@
+.navbar {
+    background-color: #009688; /* Teal background color */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: white; /* White text color for links */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffeb3b; /* Bright yellow color on hover */
+  }
+  
+  /* Styling the 'News' and 'Notes' links to look like buttons */
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    background-color: white;
+    color: #009688; /* Teal text color */
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    background-color: #ffeb3b; /* Yellow background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white; /* White color for the hamburger icon */
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: white; /* White color for the brand */
+  }
+  
+  .navbar-dark .navbar-brand:hover {
+    color: #ffeb3b; /* Yellow color on hover for the brand */
+  }
+  
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    background-color: #ffeb3b; /* Yellow background when active */
+    color: white; /* White text when active */
+  }
+  .nav-item{
+    margin: 2px;
+  }
+
+/* Enhanced Navbar styles */
+.navbar {
+  background: linear-gradient(90deg, #008080 60%, #4fd1c5 100%) !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  border-radius: 0 0 18px 18px;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  transition: background 0.2s;
+}
+.navbar .navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.08rem;
+  border-radius: 20px;
+  margin: 0 0.2em;
+  padding: 0.5em 1.2em;
+  transition: background 0.18s, color 0.18s;
+}
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+  background: #fff !important;
+  color: #008080 !important;
+}
+.navbar .btn,
+.navbar .btn-outline-light,
+.navbar .btn-link,
+.navbar .dropdown-toggle {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar .btn-outline-light {
+  border-color: #fff !important;
+  background: transparent !important;
+}
+.navbar .btn-outline-light:hover {
+  background: #fff !important;
+  color: #008080 !important;
+}
+.navbar .dropdown-toggle {
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 0.4em 1.1em;
+  border-width: 2px;
+  margin-left: 0.5em;
+  background: rgba(255,255,255,0.08);
+  color: #fff !important;
+}
+.navbar .dropdown-menu {
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  margin-top: 0.7em;
+}
+
+/* Dark mode Navbar */
+.dark-mode .navbar {
+  background: linear-gradient(90deg, #181a1b 60%, #23272b 100%) !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.dark-mode .navbar .navbar-brand {
+  color: #4fd1c5 !important;
+}
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #f1f1f1 !important;
+}
+.dark-mode .navbar .navbar-nav .nav-link:hover, .dark-mode .navbar .navbar-nav .nav-link.active {
+  background: #4fd1c5 !important;
+  color: #181a1b !important;
+}
+.dark-mode .navbar .btn,
+.dark-mode .navbar .btn-outline-light,
+.dark-mode .navbar .btn-link,
+.dark-mode .navbar .dropdown-toggle {
+  color: #4fd1c5 !important;
+  background: #23272b !important;
+  border-color: #4fd1c5 !important;
+}
+.dark-mode .navbar .btn-outline-light:hover {
+  background: #4fd1c5 !important;
+  color: #181a1b !important;
+}
+.dark-mode .navbar .dropdown-toggle {
+  background: #23272b !important;
+  color: #4fd1c5 !important;
+  border-color: #4fd1c5 !important;
+}
+.dark-mode .navbar .dropdown-menu {
+  background: #23272b !important;
+  color: #f1f1f1 !important;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+}
+
+/* Navbar avatar styles */
+.avatar-navbar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #008080 60%, #4fd1c5 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.dark-mode .avatar-navbar {
+  background: linear-gradient(135deg, #23272b 60%, #4fd1c5 100%);
+  color: #4fd1c5;
+}
+
+/* Notification bell */
+.navbar .btn-link {
+  color: #008080;
+  font-size: 22px;
+  padding: 0;
+  margin-left: 0.5em;
+  transition: color 0.18s;
+}
+.navbar .btn-link:hover {
+  color: #4fd1c5;
+}
+.dark-mode .navbar .btn-link {
+  color: #4fd1c5;
+}
+.dark-mode .navbar .btn-link:hover {
+  color: #2dd4bf;
+}
+
+/* Divider */
+.navbar .nav-item.mx-2 {
+  border-left: 1.5px solid #e0e0e0;
+  height: 28px;
+  margin: 0 0.7em !important;
+}
+.dark-mode .navbar .nav-item.mx-2 {
+  border-left: 1.5px solid #4fd1c5;
+}
+
+/* Nav pill button styles for News/Notes */
+.nav-pill-btn {
+  background: rgba(255,255,255,0.13);
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: #fff !important;
+  padding: 0.45em 1.3em;
+  margin: 0 0.2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.nav-pill-btn:hover, .nav-pill-btn.active {
+  background: #fff !important;
+  color: #008080 !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.dark-mode .nav-pill-btn {
+  background: rgba(79,209,197,0.13);
+  color: #4fd1c5 !important;
+}
+.dark-mode .nav-pill-btn:hover, .dark-mode .nav-pill-btn.active {
+  background: #4fd1c5 !important;
+  color: #181a1b !important;
+}
+
+/* High-contrast Navbar styles for light mode */
+.navbar {
+  background: #008080 !important;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.10);
+  border-radius: 0 0 18px 18px;
+  border-bottom: 1.5px solid #e0e0e0;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  transition: background 0.2s;
+}
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar .nav-pill-btn {
+  background: #fff;
+  color: #008080 !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 2px solid #008080;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.navbar .nav-pill-btn * {
+  color: #008080 !important;
+  font-weight: 700;
+}
+.navbar .nav-pill-btn:hover, .navbar .nav-pill-btn.active {
+  background: #fff !important;
+  color: #008080 !important;
+  border: 2px solid #008080;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.navbar .avatar-navbar {
+  background: #4fd1c5;
+  color: #008080;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 1.5px solid #e0e0e0;
+}

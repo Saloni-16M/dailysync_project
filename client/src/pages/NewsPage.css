@@ -1,0 +1,181 @@
+.btn-teal {
+    background-color: #008080 !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-teal:hover {
+    background-color: #006666;
+    color: white;
+  }
+  
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Title Styling */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #008080;
+  }
+  
+  /* Card Text Styling */
+  .card-text {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Read More Button Styling */
+  .btn-outline-teal {
+    color: #008080;
+    border-color: #008080;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-teal:hover {
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Spinner Styling */
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .card {
+      margin: 0 10px;
+    }
+  
+    .btn-teal {
+      width: 100%;
+    }
+  }
+  .card {
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #d1ecf1;
+    color: #006666;
+    font-weight: bold;
+  }
+  .text-teal {
+    color: teal;
+  }
+  /* Add a background color to the accordion header when active */
+.accordion-button:not(.collapsed) {
+    background-color: #009688 !important; /* Teal color when expanded */
+    color: white !important; /* White text color */
+    border-color: #00796b !important; /* Optional: Darker teal border */
+  }
+  
+  /* Change color of the accordion header when hovered */
+  .accordion-button:hover {
+    background-color: #00796b !important; /* Darker teal color on hover */
+    color: white !important;
+  }
+  
+  /* Optional: Make accordion items more visually appealing */
+  .accordion-item {
+    margin-bottom: 10px; /* Space between accordion items */
+    border: 1px solid #ccc; /* Light border for the accordion items */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  /* Dark mode styles for NewsPage */
+.dark-mode .card {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border-color: #23272b !important;
+}
+.dark-mode .card-title {
+  color: #4fd1c5 !important;
+}
+.dark-mode .card-text {
+  color: #e0e0e0 !important;
+}
+.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #222c2e !important;
+  color: #4fd1c5 !important;
+  border-color: #00796b !important;
+}
+.dark-mode .accordion-button {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+}
+.dark-mode .accordion-item {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border-color: #333 !important;
+}
+.dark-mode .btn-teal {
+  background-color: #006666 !important;
+  color: #f1f1f1 !important;
+}
+  
+  /* Enhanced News card styles */
+.card.news-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10) !important;
+  border: 1px solid #e0e0e0 !important;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.card.news-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18) !important;
+  border-color: #008080 !important;
+}
+.card.news-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008080;
+}
+.card.news-card .card-text {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Dark mode for news cards */
+.dark-mode .card.news-card {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #333 !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.30) !important;
+}
+.dark-mode .card.news-card:hover {
+  border-color: #4fd1c5 !important;
+}
+.dark-mode .card.news-card .card-title {
+  color: #4fd1c5 !important;
+}
+.dark-mode .card.news-card .card-text {
+  color: #e0e0e0 !important;
+}
+  
+  

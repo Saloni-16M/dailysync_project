@@ -9,7 +9,10 @@ const noteRoutes = require('./routes/noteRoutes');
 const newsRoutes = require('./routes/newsRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://dailysync-project-edje.vercel.app',
+  credentials: true
+}));
 app.use(express.json());
 app.use(helmet());
 
